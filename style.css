@@ -98,3 +98,64 @@ body {
     background: #ffebee;
     border-color: #f44336;
 }
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-top: 1px solid #e0e0e0;
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+#prev-btn {
+    background: #e0e0e0;
+    color: #333;
+}
+
+#prev-btn:hover {
+    background: #d0d0d0;
+}
+
+#next-btn, #start-btn, #restart-btn {
+    background: #4a00e0;
+    color: white;
+}
+
+#next-btn:hover, #start-btn:hover, #restart-btn:hover {
+    background: #3a00b0;
+}
+
+.screen {
+    display: none;
+    padding: 30px;
+    text-align: center;
+}
+
+.welcome-screen {
+    display: block;
+}
+
+.result-screen h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.final-score {
+    font-size: 48px;
+    color: #4a00e0;
+    margin: 20px 0;
+}
+
+.high-scores {
+    margin-top: 30px;
+    text-align: left;
+}
+
