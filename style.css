@@ -159,3 +159,37 @@ button {
     text-align: left;
 }
 
+.high-scores h3 {
+    margin-bottom: 15px;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+#high-score-list {
+    list-style: none;
+}
+
+#high-score-list li {
+    padding: 10px;
+    background: #f9f9f9;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-feedback {
+    height: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.correct-feedback {
+    color: #4caf50;
+}
+
+.incorrect-feedback {
+    color: #f44336;
+}
