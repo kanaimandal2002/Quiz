@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Quiz Game Challenge</h1>
+        </div>
+        
+        <div class="score-container">
+            <div class="score">Score: <span id="score">0</span></div>
+            <div class="timer">Time: <span id="time">30</span>s</div>
+        </div>
+        
+        <!-- Welcome Screen -->
+        <div class="screen welcome-screen">
+            <div class="question-container">
+                <h2>Welcome to the Quiz Game!</h2>
+                <p>Test your knowledge with this interactive quiz. You'll have 30 seconds per question.</p>
+                <p>There are 5 questions in total. Good luck!</p>
+            </div>
+            <div class="controls">
+                <button id="start-btn">Start Quiz</button>
+            </div>
+        </div>
+        
+        <!-- Quiz Screen -->
+        <div class="screen quiz-screen">
+            <div class="question-container">
+                <div class="question-number">Question <span id="current-question">1</span> of 5</div>
+                <div class="question" id="question-text">What is the capital of France?</div>
+                <div class="options-container" id="options-container">
+                    <div class="option">Paris</div>
+                    <div class="option">London</div>
+                    <div class="option">Berlin</div>
+                    <div class="option">Madrid</div>
+                </div>
+                <div class="question-feedback" id="feedback"></div>
+            </div>
+            <div class="controls">
+                <button id="prev-btn">Previous</button>
+                <button id="next-btn">Next</button>
+            </div>
+        </div>
+        
+        <!-- Result Screen -->
+        <div class="screen result-screen">
+            <div class="question-container">
+                <h2>Quiz Completed!</h2>
+                <p>Your final score:</p>
+                <div class="final-score" id="final-score">0</div>
+                
+                <div class="high-scores">
+                    <h3>High Scores</h3>
+                    <ul id="high-score-list">
+                        <!-- High scores will be displayed here -->
+                    </ul>
+                </div>
+            </div>
+            <div class="controls">
+                <button id="restart-btn">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
